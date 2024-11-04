@@ -6,13 +6,13 @@ We propose a structure-aware, diagnosis-guided framework, EcuFuzz, to comprehens
 
 Our compatibility evaluation on ten ECUs from three major Tier 1 automotive suppliers has indicated that our framework is compatible with nine ECUs. Our effectiveness evaluation on three representative ECUs has demonstrated that our framework detects nine previously unknown safety-critical faults, which have been patched by technicians from the suppliers.
 
-<img src="D:\STM32CubeIDE Workstation\ecufuzz\Figure\overview.png" style="zoom: 25%;" />
+<img src=".\Figure\overview.png" style="zoom: 25%;" />
 
 ## Run the Peripheral Emulator
 
 We set up the peripheral emulator in STM32CubeIDE. Ensure that the hardware environment is fully set up as shown in figure below.
 
-<img src="D:\STM32CubeIDE Workstation\ecufuzz\Figure\hardware_setup.jpg" style="zoom: 25%;" />
+<img src=".\Figure\hardware_setup.jpg" style="zoom: 25%;" />
 
 - First, open `./Peripheral_emulator/` directory in STM32CubeIDE.
 - Build the STM32H745I_EVAL_CM7 and then build STM32H745I_EVAL_CM4. 
