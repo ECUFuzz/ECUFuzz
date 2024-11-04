@@ -1,0 +1,51 @@
+{
+  "project": "T26_ZD",
+  "can_config": {
+    "interface": "vector",
+    "app_name": "CANalyzer",
+    "channel": "0",
+    "fd": false,
+    "brs": false,
+    "bitrate": 500000,
+    "sjw_abr": 3,
+    "tseg1_abr": 15,
+    "tseg2_abr": 4,
+    "data_bitrate": 2000000,
+    "sjw_dbr": 2,
+    "tseg1_dbr": 7,
+    "tseg2_dbr": 2,
+    "f_clock": 20000000,
+    "f_clock_mhz": 20,
+    "nom_brp": 2,
+    "data_brp": 1
+  },
+  "cantp_config": {
+    "max_pdu_length": 8,
+    "max_pdu_length_fd": 64,
+    "N_As": 1,
+    "N_Ar": 1,
+    "N_Bs": 1,
+    "N_Br": 1,
+    "N_Cs": 1,
+    "N_Cr": 1,
+    "P2": 1,
+    "P2_Star": 4
+  },
+  "uds_config": {
+    "FunAddr": "5FF",
+    "IntPhyAddr": "680",
+    "IntResAddr": "681",
+    "ExtPhyAddr": "7F1",
+    "ExtResAddr": "7F9",
+    "Srv10": {
+      "S3": 5
+    },
+    "Svr19": {
+      "DtcMask": "8B",
+      "FlashCycle": 1
+    },
+    "Svr22": {
+      "DID_IntFault": "FD39"
+    }
+  }
+}

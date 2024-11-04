@@ -1,0 +1,9 @@
+{
+    "signals": [
+        {"signal_name": "lateral", "msg_id": "127", "data_start": 2, "data_len": 2, "data_shift": 0, "data_mask": 65535, "valid_start": 1, "valid_len": 1, "valid_shift": 6, "valid_mask": 3, "sensitivity": 5000, "factor": 0.001, "offset": -2, "null_low": -0.16, "null_high": 0.16, "write_did": "FD35", "required": true},
+        {"signal_name": "yawrate", "msg_id": "127", "data_start": 4, "data_len": 2, "data_shift": 0, "data_mask": 65535, "valid_start": 1, "valid_len": 1, "valid_shift": 4, "valid_mask": 3, "sensitivity": 100, "factor": 0.01, "offset": -180, "null_low": -4.0, "null_high": 4.0, "write_did": "FD14", "required": true},
+        {"signal_name": "longitudinal", "msg_id": "128", "data_start": 2, "data_len": 2, "data_shift": 0, "data_mask": 65535, "valid_start": 1, "valid_len": 1, "valid_shift": 6, "valid_mask": 3, "sensitivity": 5000, "factor": 0.001, "offset": -2, "null_low": -0.16, "null_high": 0.16, "write_did": "FD33", "required": true},
+        {"signal_name": "verta", "msg_id": "136", "data_start": 1, "data_len": 2, "data_shift": 0, "data_mask": 65535, "valid_start": 0, "valid_len": 1, "valid_shift": 4, "valid_mask": 3, "sensitivity": 5000, "factor": 0.001, "offset": -2, "null_low": -0.16, "null_high": 0.16, "write_did": "FD37", "required": false},
+        {"signal_name": "rollrate", "msg_id": "136", "data_start": 3, "data_len": 2, "data_shift": 0, "data_mask": 65535, "valid_start": 0, "valid_len": 1, "valid_shift": 6, "valid_mask": 3, "sensitivity": 100, "factor": 0.01, "offset": -180, "null_low": -4.0, "null_high": 4.0, "write_did": "FD03", "required": false}
+    ]
+}

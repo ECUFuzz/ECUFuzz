@@ -1,0 +1,3 @@
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c:75:19:HAL_SPIEx_FlushRxFifo	8
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c:114:19:HAL_SPIEx_EnableLockConfiguration	4
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c:162:19:HAL_SPIEx_ConfigureUnderrun	5

@@ -1,0 +1,4 @@
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/stm32h7xx_hal_msp.c:49:6:HAL_SPI_MspInit	56	static
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/stm32h7xx_hal_msp.c:154:6:HAL_SPI_MspDeInit	16	static
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/stm32h7xx_hal_msp.c:185:6:HAL_FDCAN_MspInit	240	static
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/stm32h7xx_hal_msp.c:223:6:HAL_FDCAN_MspDeInit	16	static

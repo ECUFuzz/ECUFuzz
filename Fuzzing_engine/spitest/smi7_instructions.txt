@@ -1,0 +1,391 @@
+RD_SENSOR_DATA_CH1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN CH4 CH3 CH2 CH1 CH0 --- --- --- --- --- --- --- --- --- ---
+Value 1 0 0 0 0 0 --- --- --- --- --- --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN SID4 SID3 SID2 SID1 SID0 D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 1 1/0 1/0 1/0 1/0 1/0 SD13 SD12 SD11 SD10
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value SD9 SD8 SD7 SD6 SD5 SD4 SD3 SD2 SD1 SD0 0 0 1/0 1/0 1/0 1/0
+Sensor Data (SD13...SD0):
+
+RD_SENSOR_DATA_CH2
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN CH4 CH3 CH2 CH1 CH0 --- --- --- --- --- --- --- --- --- ---
+Value 1 1 0 0 0 0 --- --- --- --- --- --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN SID4 SID3 SID2 SID1 SID0 D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 1 1/0 1/0 1/0 1/0 1/0 SD13 SD12 SD11 SD10
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value SD9 SD8 SD7 SD6 SD5 SD4 SD3 SD2 SD1 SD0 0 0 1/0 1/0 1/0 1/0
+Sensor Data (SD13...SD0):
+
+RD_CAPTURED_DATA_CH2
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN CH4 CH3 CH2 CH1 CH0 --- --- --- --- --- --- --- --- --- ---
+Value 1 1 0 0 0 1 --- --- --- --- --- --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN SID4 SID3 SID2 SID1 SID0 D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 1 1/0 1/0 1/0 1/0 1/0 SD13 SD12 SD11 SD10
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value SD9 SD8 SD7 SD6 SD5 SD4 SD3 SD2 SD1 SD0 0 0 1/0 1/0 1/0 1/0
+Sensor Data (SD13...SD0):
+
+WR_MODE
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 0 0 0 0 0 1 0 0 --- --- --- --- ---
+MISO n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a
+Value --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- VM3 VM2 VM1 VM0 1/0 1/0 1/0 --- ---
+MISO n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a n/a
+Value --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Voltage Mode (VM3...VM0):
+
+RD_MODE
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 0 0 0 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 CRC7 CRC6 CRC5 CRC4
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value CRC3 CRC2 CRC1 CRC0 0 0 0 PRO VM3 VM2 VM1 VM0 1/0 1/0 1/0 1/0
+Voltage Mode (VM3...VM0):
+
+RD_DEVICE_ID
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 0 0 0 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 EDID7 EDID6 EDID5 EDID4
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value EDID3 EDID2 EDID1 EDID0 DID7 DID6 DID5 DID4 DID3 DID2 DID1 DID0 1/0 1/0 1/0 1/0
+Extended device ID (EDID7...EDID0):
+Device ID (DID7...DID0):
+
+RD_REVISION_ID
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 0 0 1 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value 0 0 0 0 RID7 RID6 RID5 RID4 RID3 RID2 RID1 RID0 1/0 1/0 1/0 1/0
+Revision ID (RID7...RID0):
+
+RD_SID
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 0 0 1 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value 0 0 SID24 SID23 SID22 SID21 SID20 SID14 SID13 SID12 SID11 SID10 1/0 1/0 1/0 1/0
+Sensor ID Channel 1 (SID14...SID10):
+Sensor ID Channel 2 (SID24...SID20):
+
+WR_SID
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 0 0 0 1 1 1 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- --- --- --- ---
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value --- SID24 SID23 SID22 SID21 SID20 SID14 SID13 SID12 SID11 SID10 1/0 1/0 1/0 --- ---
+MISO --- --- --- --- --- --- --- --- --- --- --- --- GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+Sensor ID Channel 1 (SID14...SID10):
+Sensor ID Channel 2 (SID24...SID20):
+
+RD_OFFSET_REG_CH1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 1 0 0 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 OFF15 OFF14 OFF13 OFF12
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value OFF11 OFF10 OFF9 OFF8 OFF7 OFF6 OFF5 OFF4 OFF3 OFF2 OFF1 OFF0 1/0 1/0 1/0 1/0
+Offset Correction Register (OFF15...OFF0):
+
+RD_OFFSET_REG_CH2
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN 0 1 0 1 0 1 0 0 0 0 --- --- --- --- ---
+Value 0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 OFF15 OFF14 OFF13 OFF12
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value OFF11 OFF10 OFF9 OFF8 OFF7 OFF6 OFF5 OFF4 OFF3 OFF2 OFF1 OFF0 1/0 1/0 1/0 1/0
+Offset Correction Register (OFF15...OFF0):
+
+WR_OFFSET_CANCELLATION
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 0 1 1 0 0 1 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- --- --- --- ---
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value --- OCL22 OCL21 OCL20 OC21 OC20 OCL12 OCL11 OCL10 OC11 OC10 1/0 1/0 1/0 --- ---
+MISO --- --- --- --- --- --- --- --- --- --- --- --- GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+Offset Cancellation Mode Channel 1 (OC11...OC10):
+Offset Cancellation Mode Channel 2 (OC21...OC20):
+FOC Sample Count Channel 1 (OCL12...OCL10):
+FOC Sample Count Channel 2 (OCL22...OCL20):
+
+RD_OFFSET_CANCELLATION
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 1 1 0 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value 0 0 OCL22 OCL21 OCL20 OC21 OC20 OCL12 OCL11 OCL10 OC11 OC10 1/0 1/0 1/0 1/0
+Offset Cancellation Mode Channel 1 (OC11...OC10):
+Offset Cancellation Mode Channel 2 (OC21...OC20):
+FOC Sample Count Channel 1 (OCL12...OCL10):
+FOC Sample Count Channel 2 (OCL22...OCL20):
+
+RD_CLOCK_COUNTER
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 1 1 0 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 CC15 CC14 CC13 CC12
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value CC11 CC10 CC9 CC8 CC7 CC6 CC5 CC4 CC3 CC2 CC1 CC0 1/0 1/0 1/0 1/0
+Clock Counter Value (CC15...CC0):
+
+WR_TEST_MODE
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 1 0 0 0 1 1 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- --- --- --- ---
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- TMD21 TMD20 TMD11 TMD10 1/0 1/0 1/0 --- ---
+MISO --- --- --- --- --- --- --- D3 D2 D1 D0 --- GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 1/0 1/0 1/0 1/0 0 1/0 1/0 1/0 1/0
+Self Test Mode Channel 1 (TMD11...TMD10):
+Self Test Mode Channel 2 (TMD21...TMD20):
+
+RD_TEST_MODE
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 1 0 0 0 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 0 TMD21 TMD20 TMD11 TMD10 1/0 1/0 1/0 1/0
+Self Test Mode Channel 1 (TMD11...TMD10):
+Self Test Mode Channel 2 (TMD21...TMD20):
+
+RD_MONITOR_I_DATA
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 1 0 0 1 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- DCM(MON15) ME(MON14) not_used(MON13) CD(MON12)
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO SOC2(MON11) SOC1(MON10) EXT_M(MON9) OTP_ECC(MON8) Lock(MON7) OTP(MON6) not_used(MON5) No_CLK(MON4) not_used(MON3) not_used(MON2) OC2(MON1) OC1(MON0) GS CRC2 CRC1 CRC0
+Value 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0
+
+RD_MONITOR_II_DATA
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 1 0 0 1 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- not_used(MON15) not_used(MON14) not_used(MON13) not_used(MON12)
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO not_used(MON11) not_used(MON10) FOC_Busy_CH2(MON9) FOC_Busy_CH1(MON8) not_used(MON7) GND_MEMS(MON6) not_used(MON5) GND_EXT(MON4) UVA(MON3) UVSI(MON2) UVS(MON1) EOP(MON0) GS CRC2 CRC1 CRC0
+Value 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0 1/0
+
+WR_CONFIG_1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 1 0 1 0 0 1 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- --- --- --- ---
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- DCM CLS --- LPF21 LPF20 LPF11 LPF10 1/0 1/0 1/0 --- ---
+MISO --- --- --- --- --- --- --- --- --- --- --- --- GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+Disable Die Corrosion Monitor (DCM):
+Filter Frequency Of Channel 1 (LPF11...LPF10):
+Filter Frequency Of Channel 2 (LPF21...LPF20):
+
+RD_CONFIG_1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 1 0 1 0 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 DCM CLS 0 LPF21 LPF20 LPF11 LPF10 1/0 1/0 1/0 1/0
+Disable Die Corrosion Monitor (DCM):
+Filter Frequency Of Channel 1 (LPF11...LPF10):
+Filter Frequency Of Channel 2 (LPF21...LPF20):
+
+WR_SOFT_RESET
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 1 0 1 1 1 1 0 0 SR15 SR14 SR13 SR12 SR11
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- --- --- --- ---
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value SR10 SR9 SR8 SR7 SR6 SR5 SR4 SR3 SR2 SR1 SR0 1/0 1/0 1/0 --- ---
+MISO --- --- --- --- --- --- --- --- --- --- --- --- GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+Soft Reset Activation Code (SR15...SR0):
+
+WR_END_OF_PROG
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 1 0 0 D15 D14 D13 D12 D11
+Value 0 0 1 1 1 0 0 0 1 0 0 EOP15 EOP14 EOP13 EOP12 EOP11
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- --- --- --- ---
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 0 0 0 0
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 CRC2 CRC1 CRC0 --- ---
+Value EOP10 EOP9 EOP8 EOP7 EOP6 EOP5 EOP4 EOP3 EOP2 EOP1 EOP0 1/0 1/0 1/0 --- ---
+MISO --- --- --- --- --- --- --- --- --- --- --- --- GS CRC2 CRC1 CRC0
+Value 0 0 0 0 0 0 0 0 0 0 0 0 1/0 1/0 1/0 1/0
+End Of Programming Activation (EOP15...EOP0):
+
+RD_SELF_TEST_CH1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 0 0 1 1 0 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 PST7 PST6 PST5 PST4
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value PST3 PST2 PST1 PST0 NST7 NST6 NST5 NST4 NST3 NST2 NST1 NST0 1/0 1/0 1/0 1/0
+Positive Self-Test OTP Channel 1 (PST7...PST0):
+Negative Self-Test OTP channel 1 (NST7...NST0):
+
+RD_SELF-TEST_CH2
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 0 0 1 1 1 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 PST7 PST6 PST5 PST4
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value PST3 PST2 PST1 PST0 NST7 NST6 NST5 NST4 NST3 NST2 NST1 NST0 1/0 1/0 1/0 1/0
+Positive Self-Test OTP Channel 2 (PST7...PST0):
+Negative Self-Test OTP channel 2 (NST7...NST0):
+
+RD_RAW_OFFSET_CH1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 0 1 1 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 RAW13 RAW12 RAW11 RAW10
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value RAW9 RAW8 RAW7 RAW6 RAW5 RAW4 RAW3 RAW2 RAW1 RAW0 0 0 1/0 1/0 1/0 1/0
+Raw Offset Data Channel 1 (RAW13...RAW0):
+
+RD_RAW_OFFSET_CH2
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 1 0 1 0 0 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 RAW13 RAW12 RAW11 RAW10
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value RAW9 RAW8 RAW7 RAW6 RAW5 RAW4 RAW3 RAW2 RAW1 RAW0 0 0 1/0 1/0 1/0 1/0
+Raw Offset Data Channel 2 (RAW13...RAW0):
+
+RD_SERIAL1
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 0 0 0 0 0 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 SN15 SN14 SN13 SN12
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value SN11 SN10 SN9 SN8 SN7 SN6 SN5 SN4 SN3 SN2 SN1 SN0 1/0 1/0 1/0 1/0
+Serial Number (SN15...SN0):
+
+RD_SERIAL2
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 0 0 0 0 0 1 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 SN31 SN30 SN29 SN28
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value SN27 SN26 SN25 SN24 SN23 SN22 SN21 SN20 SN19 SN18 SN17 SN16 1/0 1/0 1/0 1/0
+Serial Number (SN31...SN16):
+
+RD_SERIAL3
+Bit 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+MOSI SEN Adr7 Adr6 Adr5 Adr4 Adr3 Adr2 Adr1 0 0 0 --- --- --- --- ---
+Value 0 0 0 0 0 0 1 0 0 0 0 --- --- --- --- ---
+MISO TFF TST EOP 0(not_used) TF PF SEN --- --- --- --- --- D15 D14 D13 D12
+Value 1/0 1/0 1/0 1/0 1/0 1/0 0 0 0 0 0 0 SN47 SN46 SN45 SN44
+Bit 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+MOSI --- --- --- --- --- --- --- --- --- --- --- CRC2 CRC1 CRC0 --- ---
+Value --- --- --- --- --- --- --- --- --- --- --- 1/0 1/0 1/0 --- ---
+MISO D11 D10 D9 D8 D7 D6 D5 D4 D3 D2 D1 D0 GS CRC2 CRC1 CRC0
+Value SN43 SN42 SN41 SN40 SN39 SN38 SN37 SN36 SN35 SN34 SN33 SN32 1/0 1/0 1/0 1/0
+Serial Number (SN47...SN32):

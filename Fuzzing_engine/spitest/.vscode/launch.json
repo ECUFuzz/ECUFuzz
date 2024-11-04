@@ -1,0 +1,74 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: spi_parser.py",
+            "type": "python",
+            "request": "launch",
+            "program": "spi_parser.py",
+            "args": ["2024-08-23_11-01-45.csv", "n", "n", "n"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: cg9reg_parsed.py",
+            "type": "python",
+            "request": "launch",
+            "program": "cg9reg_parsed.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: smi7reg_parsed.py",
+            "type": "python",
+            "request": "launch",
+            "program": "smi7reg_parsed.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: smi8reg_parsed.py",
+            "type": "python",
+            "request": "launch",
+            "program": "smi8reg_parsed.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: word_process.py",
+            "type": "python",
+            "request": "launch",
+            "program": "word_process.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: process_csv.py",
+            "type": "python",
+            "request": "launch",
+            "program": "process_csv.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: process_csv_smi8.py",
+            "type": "python",
+            "request": "launch",
+            "program": "process_csv_smi8.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: change_h_files.py",
+            "type": "python",
+            "request": "launch",
+            "program": "change_h_files.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
+

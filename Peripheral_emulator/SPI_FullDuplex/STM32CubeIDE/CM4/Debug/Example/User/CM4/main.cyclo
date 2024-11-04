@@ -1,0 +1,13 @@
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:179:5:main	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:241:13:Error_Handler	1
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:264:6:HAL_HSEM_FreeCallback	1
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:269:13:FDCAN_Config	4
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:334:13:ProcessMainData	6
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:412:13:ProcessLastTwoRows	2
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:454:13:CheckAndResetModifications	5
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:473:13:PollCANMessages	8
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:534:26:SendCANAcknowledgment	1
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:554:17:BufferCmp8b	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:569:17:PerformCANTransmission	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:601:26:SaveModifiedDataToFlash	6
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM4/Src/main.c:675:13:LoadDataFromFlash	2

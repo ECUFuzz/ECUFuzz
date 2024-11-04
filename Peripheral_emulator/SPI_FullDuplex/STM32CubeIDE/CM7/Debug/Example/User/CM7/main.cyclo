@@ -1,0 +1,11 @@
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:86:5:main	11
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:165:13:configureSPI	5
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:203:13:SystemClock_Config	4
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:264:6:HAL_SPI_TxRxCpltCallback	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:273:13:handleSPIComplete	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:287:6:HAL_SPI_ErrorCallback	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:296:13:Error_Handler	3
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:319:13:MPU_Config	1
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:370:13:CPU_CACHE_Enable	5
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:381:6:prepareNextChunk	15
+C:/Users/13020/Downloads/en.stm32cubeh7_v1-11-0/STM32Cube_FW_H7_V1.11.0/Projects/NUCLEO-H745ZI-Q/Examples/SPI/SPI_FullDuplex_ComDMA/CM7/Src/main.c:426:6:checkSharedMemoryFlag	2

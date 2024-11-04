@@ -1,0 +1,429 @@
+SPI instruction PROG_POM
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - 24v ast iup
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 24v ast iup
+
+SPI instruction POM_VER_CURR
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - dis ver_current[3] vlm
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction POM_CYCL_CAP
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - aut_time[8] aut on
+SPI output data 0 0 0 0 0 0 0 0 0 0 sty aky err ta bc res
+
+SPI instruction POM_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data sty vin nok sl erc ot c6 c5 c4 c3 1 c1 vet vzl v50 vel
+
+SPI instruction POM_CONVERTER
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - hlf sw jit ctrl off
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction POM_START_BIST
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - mode[2] t_bist[5] i_bist[3]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 vzl ta vel bc
+
+SPI instruction POM_READ_BIST
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data et0 ta vet mis ch vzl vel et2 et1 delta_ver[7]
+
+SPI instruction POM_START_AUTO
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - on
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction POM_READ_AUTO1…5
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 adc_result[10]
+
+SPI instruction PROG_FLM_MODE
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data fire_mode_m4[4] fire_mode_m3[4] fire_mode_m2[4] fire_mode_m1[4]
+SPI output data fire_mode_m4[4] fire_mode_m3[4] fire_mode_m2[4] fire_mode_m1[4]
+
+SPI instruction FLM_HS_ON
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction FLM_READ_FIRE_CNT1…16
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 fire_counter_hl[7] 0 fire_counter_ll[7]
+
+SPI instruction FLM_CLEAR_FIRE_CNT
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction FLM_LS_ON
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PROG_SDIS_X
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction PROG_SDIS_Y
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction PROG_SDIS_W
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction PROG_SDIS_S
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction FLM_UNLOCK
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - hs ls
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction FLM_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 tss tso run dh ull ulh d6 d5 d4 d3 d2 d1 d0
+
+SPI instruction PROG_FLM_CONF
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - tr tcl sd_mde[2]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 tr tcl sd_mde[2]
+
+SPI instruction FLM_START_DIAG
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - conf[5] mode[4]
+SPI output data 0 0 0 tss tso run dh ull ulh d6 d5 d4 d3 d2 d1 d0
+
+SPI instruction FLM_DIAG_MASK
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction FLM_READ_RES1…16
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data flt[4] vd res_value[11]
+
+SPI instruction FLM_READ_VH1…8
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data 0 0 0 0 0 vd adc_data[10]
+
+SPI instruction FLM_READ_CAP
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data cap_time_max[8] cap_time_min[8]
+
+SPI instruction FLM_READ_PST
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data vzl 0 0 tss tso run 0 0 short_info[4] diag_result[4]
+
+SPI instruction FLM_READ_SVR
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data 0 0 0 0 0 vd adc_dat
+
+SPI instruction FLM_READ_CC
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction FLM_READ_SQB
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction FLM_READ_SHORT1…4
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction FLM_READ_IGH
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPI output data c15 c14 c13 c12 c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+
+SPI instruction READ_DEV_ID
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 device_id[8]
+
+SPI instruction READ_REV_ID
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 revision_id[4]
+
+SPI instruction READ_MASK_ID
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 mask_id[4]
+
+SPI instruction EOP
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - e2 e1
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 TM E2 E1
+
+SPI instruction PSI_SUPPLY
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - s6 s5 s4 s3 s2 s1
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PSI_READ_LEV
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 0 0 c6 c5 c4 c3 c2 c1
+
+SPI instruction PSI_READ_DATA1…24
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - clr
+SPI output data 0 0 0 vas vu vs psi_data[10]
+
+SPI instruction PSI_READ_DATA32
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - clr
+SPI output data 0 0 0 vas vu vs psi_data[10]
+
+SPI instruction PSI_SYNC_GEN
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PSI_SYNC_MASK
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - m6 m5 m4 m3 m2 m1
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PROG_PSI_SID1…24
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - psi_sid[5] p
+SPI output data 0 0 0 0 0 0 0 0 0 0 psi_sid[5] p
+
+SPI instruction PROG_PSI_LINE1…6
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data p 0 0 1 0 0 ts filter[2] qr slot[2] crc baud[2] as
+SPI output data p 0 0 1 0 0 ts filter[2] qr slot[2] crc baud[2] as
+
+SPI instruction PROG_PSI_MODE
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - p2 del[4] p1 fil aut trg
+SPI output data 0 0 0 0 0 0 0 p2 del[4] p1 fil aut trg
+
+SPI instruction PSI_START_CC
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - ma e6 e5 e4 e3 e2 e1
+SPI output data 0 0 0 0 0 0 0 0 0 0 c6 c5 c4 c3 c2 c1
+
+SPI instruction PSI_READ_CC
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - stp
+SPI output data 0 0 0 0 0 0 0 0 rdy run cc6 cc5 cc4 cc3 cc2 cc1
+
+SPI instruction PSI_READ_SC
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data vzl 0 0 0 sb6 sb5 sb4 sb3 sb2 sb1 sg6 sg5 sg4 sg3 sg2 sg1
+
+SPI instruction PSI_IQ_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 h6 l6 h5 l5 h4 l4 h3 l3 h2 l2 h1 l1
+
+SPI instruction PSI_TEST_CONS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - pc8 pc7 pc6 pc5 pc4 pc3 pc2 pc1 pc0
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PROG_LIN
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - dt lin lin_current[6]
+SPI output data 0 0 0 0 0 0 0 0 dt lin lin_current[6]
+
+SPI instruction LIN_PWM
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - fce pulse_width[7]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction LIN_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data vzl 0 0 0 0 0 0 0 0 0 to off on lin_status[3]
+
+SPI instruction PROG_AIO1
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - cp wl_mode[2] aio_current[4]
+SPI output data 0 0 0 0 0 0 0 0 0 cp wl_mode[2] aio_current[4]
+
+SPI instruction PROG_AIO2
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - cp wl_mode[2] aio_current[4]
+SPI output data 0 0 0 0 0 0 0 0 0 cp wl_mode[2] aio_current[4]
+
+SPI instruction AIO1_PWM
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - en fce pulse_width[7]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction AIO2_PWM
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - en fce pulse_width[7]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction AIO1_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data vzl 0 0 0 0 0 0 0 0 0 0 off on aio_status[3]
+
+SPI instruction AIO2_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data vzl 0 0 0 0 0 0 0 0 0 0 off on aio_status[3]
+
+SPI instruction AIO_LIN_EN
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - ln a2 a1
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PROG_AINO_CONF1…12
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - mode[2] ui src current_level[4]
+SPI output data 0 0 0 0 0 0 0 0 mode[2] ui src current_level[4]
+
+SPI instruction AINO_START_AUTO
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - c11 c10 c9 c8 c7 c6 c5 c4 c3 c2 c1 c0
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction AINO_READ_AUTO1…12
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - sds
+SPI output data vzl 0 0 s2b sup vd adc_data[10]
+
+SPI instruction AINO_START_BIST
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - c9 c8 c7 c6 c5 c4 c3 c2 c1 c0 mode[3]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction AINO_READ_BIST1…7
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data vzl 0 0 err channel_result[12]
+
+SPI instruction ADC_START_AINO
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 0 src test_source[4] ui - mode[3] channel[4]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction ADC_READ_AINO
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data 0 - - - - - - - - - - - - - - sds
+SPI output data vzl 0 0 0 sup vd adc_result[10]
+
+SPI instruction WD2_TRIGGER
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data wd2_response[16]
+SPI output data wd2_checkword[16]
+
+SPI instruction WD3_TRIGGER
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data wd3_response[16]
+SPI output data wd3_checkword[16]
+
+SPI instruction WD_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 cr w3 w2 w1 faultcnt[2] fco r3 o3 r2 o2 u2 o1 u1
+
+SPI instruction READ_MON_ID
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 mon_id[8]
+
+SPI instruction DEMAND_TEST
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - pct thres_test[4]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PROG_SAF_CH1…16
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data shft zro dx dy dw fon f_coeff[2] saf_thres[8]
+SPI output data shft zro dx dy dw fon f_coeff[2] saf_thres[8]
+
+SPI instruction PROG_XY45
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - mode[2] sid_y45[5] sid_x45[5]
+SPI output data 0 0 0 0 mode[2] sid_y45[5] sid_x45[5]
+
+SPI instruction PROG_PLP_LONG
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - sid_long[5] en_time_long[8]
+SPI output data 0 0 0 sid_long[5] en_time_long[8]
+
+SPI instruction THRES_TEST_DATA
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data test_data[16]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction THRES_TEST_SID
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - sd gs test_sid[5]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction TEST_PLP_THRES
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 plp_threshold[8]
+
+SPI instruction TEST_PLP_DATA
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 plp_data[10]
+
+SPI instruction END_ENABLE
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - tt cf
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+SPI instruction PROG_SW_MODE
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - sdis_channel[4] count[3] en
+SPI output data 0 0 0 0 0 0 0 0 sdis_channel[4] count[3] en
+
+SPI instruction PROG_SW_UP_THRES
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - sw_up_thres[10]
+SPI output data 0 0 0 0 0 0 sw_up_thres[10]
+
+SPI instruction PROG_SW_LOW_THRES
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - sw_low_thres[10]
+SPI output data 0 0 0 0 0 0 sw_low_thres[10]
+
+SPI instruction DISABLE_STATUS
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - - - - - - - - - - - -
+SPI output data 0 0 0 0 0 0 0 0 0 DIS_ALP DIS_AHP DIS_SHP SDIS_X SDIS_Y SDIS_W SDIS_S
+
+SPI instruction PROG_SAFETY
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data - - - - - pwmfreq[2] dm[2] wd sl pu mon_spi[2] sid_pre[2]
+SPI output data 0 0 0 0 0 pwmfreq[2] dm[2] wd sl pu mon_spi[2] sid_pre[2]
+
+SPI instruction DISPOSAL
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+SPI input data disposal_code[16]
+SPI output data 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

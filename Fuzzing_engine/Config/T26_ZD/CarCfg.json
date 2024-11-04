@@ -1,0 +1,156 @@
+{
+  "Driver Front Airbag": {
+    "checked": true,
+    "byte": 0,
+    "bit": 0
+  },
+  "Passenger Front Airbag": {
+    "checked": true,
+    "byte": 0,
+    "bit": 1
+  },
+  "Front Row Left Seat Belt Pretentioner": {
+    "checked": true,
+    "byte": 0,
+    "bit": 2
+  },
+  "Driver Belt Pretensioner": {
+    "checked": true,
+    "byte": 0,
+    "bit": 3
+  },
+  "Left Side Airbag": {
+    "checked": true,
+    "byte": 0,
+    "bit": 4
+  },
+  "Right Side Airbag": {
+    "checked": true,
+    "byte": 0,
+    "bit": 5
+  },
+  "Left Curtain Airbag": {
+    "checked": true,
+    "byte": 0,
+    "bit": 6
+  },
+  "Right Curtain Airbag": {
+    "checked": true,
+    "byte": 0,
+    "bit": 7
+  },
+  "Front Row Right Seat Belt Pretentioner": {
+    "checked": true,
+    "byte": 1,
+    "bit": 0
+  },
+  "Passenger Belt Pretensioner": {
+    "checked": true,
+    "byte": 1,
+    "bit": 1
+  },
+  "Second Row Left Seat Belt Pretensioner": {
+    "checked": true,
+    "byte": 1,
+    "bit": 2
+  },
+  "Second Row Right Seat Belt Pretensioner ": {
+    "checked": true,
+    "byte": 1,
+    "bit": 7
+  },
+  "Driver Knee Airbag": {
+    "checked": true,
+    "byte": 2,
+    "bit": 4
+  },
+  "Passenger Knee Airbag": {
+    "checked": true,
+    "byte": 2,
+    "bit": 5
+  },
+  "Second Row Left Side Airbag": {
+    "checked": true,
+    "byte": 2,
+    "bit": 6
+  },
+  "Second Row Right Side Airbag": {
+    "checked": true,
+    "byte": 2,
+    "bit": 7
+  },
+  "Far Side Airbag": {
+    "checked": true,
+    "byte": 3,
+    "bit": 0
+  },
+  "Pedestrain Protection Airbag": {
+    "checked": true,
+    "byte": 3,
+    "bit": 2
+  },
+  "Side Resraints Airbag": {
+    "checked": false,
+    "byte": 3,
+    "bit": 3
+  },
+  "Row 2 Right front Airbag": {
+    "checked": true,
+    "byte": 3,
+    "bit": 4
+  },
+  "Row 2 Leftt front Airbag": {
+    "checked": true,
+    "byte": 3,
+    "bit": 5
+  },
+  "Front Restraints Sensor": {
+    "checked": true,
+    "byte": 1,
+    "bit": 3
+  },
+  "Side Restraints Sensor": {
+    "checked": true,
+    "byte": 1,
+    "bit": 4
+  },
+  "Pressure Sensor": {
+    "checked": false,
+    "byte": 3,
+    "bit": 1
+  },
+  "Passenger SBR (occupant) & Buckle Switch": {
+    "checked": true,
+    "byte": 1,
+    "bit": 5
+  },
+  "Second Row BuckleSwitch": {
+    "checked": false,
+    "byte": 1,
+    "bit": 6
+  },
+  "Passenger Frontal  Switch Airbag(PAB)": {
+    "checked": true,
+    "byte": 2,
+    "bit": 0
+  },
+  "Second Row SBR": {
+    "checked": true,
+    "byte": 2,
+    "bit": 1
+  },
+  "Third Row Buckle Switch": {
+    "checked": false,
+    "byte": 2,
+    "bit": 2
+  },
+  "Third Row SBR+buckle Switch": {
+    "checked": true,
+    "byte": 2,
+    "bit": 3
+  },
+  "Power Type": "COMMON",
+  "Model Code": "T26",
+  "VIN": "11223344556677118899AABBCCDDEEFF00",
+  "Sensitivity": "1388"
+}
